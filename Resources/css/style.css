@@ -1,0 +1,595 @@
+/*reset defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+/* Fonts */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+/*individual tags for paragraphs etc...*/
+/* p {
+  margin: 1.4rem;
+  font-size: 0.9rem;
+  text-align: center;
+  
+} */
+
+#about-me {
+  color:cornsilk;
+}
+
+
+
+h1 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+} 
+
+
+
+/* NavBar */
+.navbar {
+  width: 100%;
+  background-color: #595959;
+  overflow: hidden;
+  position: fixed;
+  top: -0.5rem;
+  z-index: 4;
+   
+}
+
+/* navbar items */
+.navbar a, #transcript {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1.5rem 0.5rem;
+  color:cornsilk;
+  text-align: center;
+ 
+}
+
+/* Navbar left */
+.navleft a {
+  float: left;
+  
+}
+
+/* Navbar right */
+.navright a {
+  float: right;
+ 
+}
+
+#list-last {
+  float: right;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color:rgb(14, 131, 167);
+}
+
+/*Hover for BDD SECTION*/
+.item:hover {
+ transform: scale(1.2);
+ border: 2px solid rgb(14, 131, 167);
+ margin: 2px;
+ padding: 2px; 
+}
+
+/*Hover for CUCUMBER REPORT*/
+#report {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #27afea;
+  border-radius: 50%;
+  padding:0.5rem;
+}
+
+#reportcv {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #27afea;
+  border-radius: 50%;
+  padding:0.5rem;
+}
+
+
+
+#report:hover, #reportcv:hover {
+  background-color:rgb(14, 131, 167);
+  padding: 1rem;
+}
+
+
+/*Nav bar link text*/
+.navbar p {
+  float: right;
+  margin: 0 0.5rem;
+
+}
+
+/*Nav bar link text not displayed on devices*/
+@media only screen and (max-width: 520px) {
+  .mobile {
+    display: none;
+  }
+}
+
+#Name {
+  
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  padding: 1.5rem 0.5rem;
+  color: cornsilk;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+#BDD {
+  
+  background-color: #27afea;
+  color: cornsilk;
+  margin: 1rem 0 0 0;
+}
+
+.container-intro {
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+  
+}
+
+.container--a{
+  
+  flex-direction: column;
+  /* display: flex; */
+  max-width: 80%;
+  align-items: center;
+  /*justify-content: center;*/
+  
+}
+
+.ost--one, .ost--two {
+  text-align: justify;
+  flex: 1 1 auto;
+  margin: 5px 0 5px 0;
+  font-size: 0.9rem;
+}
+
+
+.container-aboutMe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color:black;
+  /*background-color: #27afea;*/
+  padding: 2rem;
+  margin: 0;
+  max-height: 40rem;
+  }
+
+  #section1 {
+    background-color: darkred;
+  }
+
+  .vid--ost, #transcript {
+    margin:1rem;
+    padding:1rem;
+    
+    
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color:#27afea;
+  
+  
+
+}
+
+#title {
+  margin: 0;
+  padding-top: 1.5rem;
+  background-color: #27afea;
+  text-align: center;
+  color: cornsilk;
+}
+
+
+.left,
+.center,
+.right {
+  
+  min-width: 25%;
+  flex-direction: column;
+  display: flex;
+  padding: 3rem 0.5rem;
+  /*background-color: #595959;*/
+  margin: 2rem 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: cornsilk;
+     
+}
+
+.left h2,
+.center h2,
+.right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+     
+}
+
+
+
+.left p, .center p, .right p {
+  color: cornsilk;
+  background-color: #595959;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+
+  
+  
+}
+
+.left--text, .center--text, .right--text {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+
+
+/*left-right-center containers display in block when on devices*/ 
+
+@media only screen and (max-width: 520px) {
+  .container {
+    display: block;
+    min-width:75%;
+  }
+
+  .left--text, .center--text, .right--text {
+    
+    max-width: 60%;
+    
+}
+}
+
+/*container images*/
+.container img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+/*.imgTitle {
+  
+  position: absolute;
+  padding: 0.2rem;
+  border: 0.1rem solid #595959;
+  background-color: #595959;
+  border-radius: 50%;
+  z-index: 2;
+  /*margin: 1.2rem;
+  text-align: center;
+}
+*/
+
+/*Image Titles */
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.box .imgTitle {
+  position: absolute;
+  /*z-index: 2;*/
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 100%; /* Set the width of the positioned div */
+  padding: 0.5rem 0 0.5rem 0;
+  /*border: 0.1rem solid #595959;*/
+  background-color: #595959;
+  z-index: 2;
+}
+
+/*image links*/
+.left a, .center a, .right a {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1.2rem;
+}
+
+.left a:hover, .center a:hover, .right a:hover {
+  background-color: rgb(14, 131, 167);
+}
+
+
+
+
+/*Footer*/
+h3  {
+  text-align: left;
+  margin: 1rem;
+  color: cornsilk;
+  
+}
+
+footer {
+  background-color: #595959;
+  padding: 0.5rem;
+
+}
+/*BDD Page*/
+#bdd--title {
+  padding-top: 2rem;
+} 
+
+/*Video*/
+.centervid { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  
+ 
+
+}
+
+.imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+@media only screen and (max-width: 520px) {
+  .imgCenter {
+    width: 90%;
+  }
+}
+
+img {
+  filter: saturate(200%);
+}
+
+/*BDD PAGE VIDEO CONTAINER*/
+.video--container {
+
+  align-items: center;
+  
+  flex-direction: column;
+  font-size: 0.9rem;
+  color:black;
+  /*background-color: #27afea;*/
+  padding: 2rem;
+  margin: 1rem;
+  
+}
+
+#bdd--vid--section {
+  background-color:#27afea;
+}
+
+/*Cucumber image page*/
+
+.imgCenterCucumber {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+@media only screen and (max-width: 520px) {
+  .imgCenterCucumber {
+    width: 100%;
+  }
+}
+
+
+/*cucumber code block */
+.codeblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  flex-wrap: wrap;
+  
+}
+
+
+.code {
+  flex-direction: column;
+  /* display: flex; */
+  width: 80%;
+  align-items:center;
+  /*justify-content: center;*/
+  text-align: left;
+  background-color: rgb(184, 179, 179);
+  font-size: 1.1rem;
+  padding: 0.35rem 0 0 0.35rem;
+}
+
+.feature span {
+  color: red;
+  font-weight: bold;
+}
+
+.given span {
+  color: red;
+  font-style: italic;
+  /*font-weight: lighter;*/
+}
+
+.given em {
+  color:blue;
+  font-style: normal;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.lgreen {
+  color: green;
+}
+
+.lblue {
+  color:blue;
+  font-weight: lighter;
+}
+
+.lred {
+  color: rgb(245, 55, 86);
+}
+
+.grey {
+  
+  color:grey;
+}
+
+.italic--red {
+  color: red;
+  font-style: italic
+  ;
+}
+
+
+
+/*BDD GRAPHIC AND LINK */
+
+.item--container {
+  display: flex;
+  height: 30rem;
+  background-color: #27afea;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  border: 0.4rem solid #27afea;
+  height: 22rem;
+  width: 22rem;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  
+}
+
+.bddimage {
+  max-width: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+/*Automation section*/
+
+#graybackground {
+  background-color: rgb(184, 179, 179);
+  padding: 0.75rem;
+}
+
+/*dropdown section for 7 principles*/
+
+.contents-seven {
+  min-width: 75%;
+  flex-direction: row;
+  display: flex;
+  padding: 4rem 0.5rem;
+  /*background-color: #595959;*/
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+
+.dropbtn {
+  display: flex;
+  background-color: #595959;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  max-width: 18rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.dropdown-content a {
+  color: black;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:rgb(14, 131, 167);
+}
+
