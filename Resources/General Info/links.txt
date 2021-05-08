@@ -1,1 +1,6 @@
 https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all
+
+Copyright Notice 
+This document may be copied in its entirety, or extracts made, if the source is acknowledged. 
+Copyright Notice © International Software Testing Qualifications Board (hereinafter called ISTQB®) 
+ISTQB® is a registered trademark of the International Software Testing Qualifications Board.

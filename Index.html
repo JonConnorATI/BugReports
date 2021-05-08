@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Jon Connor</title>
+        <title>Bug Reports</title>
         <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
         <script src="https://kit.fontawesome.com/e532e7082b.js" crossorigin="anonymous"></script>
 
@@ -19,7 +19,7 @@
     <a class="active" href="#start"><p class="mobile">Home</p><i class="fas fa-home"></i></a>
   </div>
     
-  <h2 id="Name">Jon Connor</h2>
+  <h2 id="Name">Bugs & Jira</h2>
   <div class="navright"> 
     <a href="https://join.skype.com/NUmfPjheTLoX" target="_blank" id="list-last"><p class="mobile">Skype</p><i class="fab fa-skype"></i></a>
     <a href="mailto:jonconnor@live.ie" target="_blank"><p class="mobile">Email</p><i class="fas fa-at"></i></a>
@@ -29,16 +29,16 @@
 
 <div id="start"><p id="about-me">Helper text</p></div>
 <div class="main">
-<!--About me section--> 
+<!--What makes a good bug report--> 
   <div class="container-intro">
     <div class="container--a">
-      <h1 class=>About me</h1>
-      <p class="ost--one">I am a software tester and believe the role of a tester is much more than finding bugs. My view is that the tester is an advocate for the end users and should be involved in the Development Lifecycle from the beginning.<br><br>
-      For me being part of a team that provides software solutions to its clients and hearing the words, <b><i>"This is exactly what we were looking for"</i></b> is what its all about.<br><br> 
-      This web page idea came to me when I read an article on linkedin where the author (apologies for not giving credit, can't find the post now) stated that Information Technology is not <em>WORKING</em> for a living but rather <em>LEARNING</em> for a living.<br><br>
-      So that inspired me to write a web page. I took an online course in flexbox and added a few bits of javascript that I know. At the same time I decided to do an article about Cucumber and Gherkin after doing a course. The reasoning being if you can't explain it you don't understand it.<br><br>
-      I have found this project enjoyable and challenging. The most challenging part has been the content. Somebody once sent me an email, that started with, <q>Sorry this email is so long but I didn't have time to write a short one.</q> I completely get that now.
-    </p>
+      <h1 class=>What Makes a Good Bug Report</h1>
+      <p class="ost--one">I've been asked this question at every interview, in an interview a few years ago my answer was - that the reproduction steps, the expected vs actual behaviour, evidence and any set up, environment conditions or variables need to be included so that the developer or programmer assigned to fix the defect has all the nescearry information to reproduce the defect and solve the issue.<br><br>
+      A couple of days later I got feedback from the company and they said my response on the "Defect Report Criteria" was very weak.<br><br>
+      Oh dear I thought, I must have logged thousdands of defects and no one has ever complained about anything like this before.<br><br>
+      So I took it on the chin and opened up Jira to write a defect and then it hit me. <em>Ticket ID</em>, never mentioned that, the <em>author</em> never mentioned that, the <em>severity</em> never mentioned that, <em>Open, re opened</em> never mentioned that. So maybe my answer was weak. Don't make the same mistake as me and take the items, that Jira automitically looks after, for granted.<br><br>
+      The interviewer never asked me to expand on my answer or say, <q>anything else you can think of?</q> I'd took it as read (Jira was in the job description) that the company was working with Jira, so was assuming they wanted to know what the difference between a good bug report (that gets things fixed) and a bad bug report (wastes time) was. Any way interviews are a different topic altogether, for another day perhaps.<br><br>
+      I've never made the same mistake again, I always quote the ISTQB definition of a defect report.</p>
   
     </div>
   </div>
@@ -56,14 +56,14 @@
     
   </div>-->
 <!--BDD/CUCUMBER/AUTOMATION SECTION-->
-  <div class="container-intro" id="BDD" href="#bdd">
+  <!--<div class="container-intro" id="BDD" href="#bdd">
     <div class="container--a">
       <h1>Behavior Driven Development (BDD)</h1>
         <p class="ost--one">I'm a big fan of BDD and used it to implement a new module in an existing software package last year. The collaboration between devlopers, testers and the business users by communicating in non technical language to build software is a very powerful tool.<br><br>
         Result - software was delivered <i><b>faster</b></i> and <i><b>better.</b></i><br><br>
         Click on the item below to enter the BDD section and find out more about Cucumber, Gherkin and Automation.</p>
     </div>
-  </div>
+  </div>-->
   
   <!--<div class="container">
 
@@ -88,49 +88,81 @@
 
   </div>-->
 
-  <div class="item--container">
+  <!--<div class="item--container">
     <div class="item">
       <a href="bdd.html"><img class ="bddimage" src="Resources/images/BDD2.png" alt="BDD GRAPHIC" ></a>
       
     </div>
-  </div>
-   <!--Further info-->
-  <div class="container-intro">
-    <div class="container--a">
-      <h1>The 7 Principles of Software Testing</h1>
-        <p class="ost--one">These 7 principles were the first things I ever learnt about Software Testing. I always refer to them when I am starting a new project, and when issues arise to check I am on the right path.<br>
-        <br>Below are the principles,<em> hover on each one, </em>I have included a brief description of what they mean to me.
+  </div>-->
+   <!--Defect Criteria-->
+   <div class="container--istqb">
+<div class="container-defects">
+    <div class="container--d">
+      <h1 id="whiteh">ISTQB Definition of a Defect Report</h1>
+        <p class="ost--one" id="whitep">Below are the points mentioned in the ISTQB syllabus,<em> hover on each one, </em>I have included a brief description of what they mean to me.<br><br>A defect report filed during dynamic testing typically includes:
         </p>
     </div>
   </div>
     <div class="container">
       <div class="contents-seven">
-        <div class="dropdown"><button class="dropbtn">Testing shows the presence of defects, not their absence</button>
+        <div class="dropdown"><button class="dropbtn">An identifier</button>
         <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
       </div>
-      <div class="dropdown"><button class="dropbtn">Beware of the pesticide paradox</button>
+      <div class="dropdown"><button class="dropbtn">A title and a short summary of the defect being reported</button>
         <div class="dropdown-content"><a>Repetitive use of the same pesticide mix to eradicate insects will lead to the insects developing pesticide resistance. The same applies to software testing. If the same tests are conducted, the method will be useless for discovering new defects.</a></div>
       </div>
          
-        <div class="dropdown"><button class="dropbtn">Defects cluster together</button>
+        <div class="dropdown"><button class="dropbtn">Date of the defect report</button>
           <div class="dropdown-content"><a> The Pareto Principle to software testing: approximately 80% of the problems are found in 20% of the modules</a></div>
         </div>
        
-        <div class="dropdown"><button class="dropbtn">Testing is context dependent</button>
+        <div class="dropdown"><button class="dropbtn">issuing organization, and author</button>
           <div class="dropdown-content"><a>The way you test an e-commerce site will be different from the way you test a flight simmulator. You might use a different approach, methodologies, techniques, and types of testing depending upon the application type.</a></div>
         </div>
-        <div class="dropdown"><button class="dropbtn">Absence-of-errors is a fallacy</button>
+        <div class="dropdown"><button class="dropbtn">Identification of the test item (configuration item being tested) and environment. </button>
           <div class="dropdown-content"><a>It is possible that software 99% bug-free is still unusable. The system could have been tested for the wrong requirement. Software testing is not just finding defects, but checking that the software meets the business needs.</a></div>
         </div>
-        <div class="dropdown"><button class="dropbtn">Exhaustive testing is impossible</button>
+        <div class="dropdown"><button class="dropbtn">The development lifecycle phase(s) in which the defect was observed</button>
           <div class="dropdown-content"><a>We can't test everything, there are too many inputs and outputs. Concentrate on the biggest risks.</a></div>
         </div>
-        <div class="dropdown"><button class="dropbtn">Early testing saves time and money</button>
+        <div class="dropdown"><button class="dropbtn">A description of the defect to enable reproduction and resolution, including logs, database dumps, screenshots, or recordings (if found during test execution)</button>
           <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Expected and actual results</button>
+          <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Scope or degree of impact (severity) of the defect on the interests of stakeholder(s)</button>
+          <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Urgency/priority to fix</button>
+          <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">State of the defect report (e.g., open, deferred, duplicate, waiting to be fixed, awaiting confirmation testing, re-opened, closed)</button>
+          <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Conclusions, recommendations and approvals</button>
+          <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Global issues, such as other areas that may be affected by a change resulting from the defect</button>
+          <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Change history, such as the sequence of actions taken by project team members with respect to the defect to isolate, repair, and confirm it as fixed</button>
+          <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">References, including the test case that revealed the problem</button>
+          <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
         </div>
       </div>
     </div>
-
+    <div class="container-defects">
+      <div class="container--d">
+        <p class="ost--one" style="color: cornsilk;">Copyright Notice. This document may be copied in its entirety, or extracts made, if the source is acknowledged. Copyright Notice © International Software Testing Qualifications Board (hereinafter called ISTQB®) ISTQB® is a registered trademark of the International Software Testing Qualifications Board.
+          </p>
+      </div>
+    </div>
+   </div>
+  
+   
     
   
   <!--My skills section-->
@@ -196,7 +228,7 @@
 
   <div class="container-intro">
     <div class="container--a">
-      <h1 class=>Get in touch</h1>
+      <h1>Get in touch</h1>
       <p class="ost--one">If you are looking for a Software Tester to help on any project, you can contact me via the email, LinkedIn or skype links on the top right of the page. It would be great to hear from you and find out more about your project and for you to find out more about me.<br><br>My contact details are also in my <a id="reportcv" href="Resources/Jon_Connor_CV.pdf" target="popup" onclick="window.open('Resources/Jon_Connor_CV.pdf'); return false">CV&nbsp;here</a>
     </p>
   
